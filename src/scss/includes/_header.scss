@@ -1,0 +1,77 @@
+.header {
+  margin-bottom: 50px;
+  position: relative;
+  padding: 20px 0;
+  
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 100%;
+    background: rgba(#000, .1);
+    z-index: -1;
+    opacity: 0.9;
+    will-change: opacity;
+    transition: opacity .8s cubic-bezier(.19,1,.22,1);
+    transition: opacity .8s , background .8s cubic-bezier(.19,1,.22,1);
+    // box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+
+  }
+  &__nav {
+    &_item {
+ 
+    }
+  }
+  &__link {
+    color: #282828;
+    &:focus {
+      color: red;
+    }
+  }
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    &_item {
+      display: inline-block;
+      margin-left: 30px;
+    }
+  }
+  &__logo {
+    display: inline-block;
+    svg g use {
+      transition: fill .6s ease;
+    }
+  }
+ 
+  &_has_background {
+    &:before {}
+    .header {
+      &__logo {
+        svg g use {
+          fill: #313131;
+        }
+      }
+    }
+  }
+}
+.header {
+  &_shadow {
+    position: absolute;
+    opacity: 0;
+    bottom: 0;
+    margin: auto;
+    background: rgba(0,0,0,.4);
+    transition: opacity .7s cubic-bezier(.19,1,.22,1);
+  }
+  &.active {
+    .header_shadow{
+      left: 0;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      opacity: 1;
+    }
+  }
+}

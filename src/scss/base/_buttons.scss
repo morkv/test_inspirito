@@ -1,0 +1,24 @@
+.btn {
+  padding: 0;
+  background: none;
+  letter-spacing: 0.12px;
+  text-decoration: none;
+  outline: none !important;
+  display: inline-block;
+  vertical-align: middle;
+  user-select: none;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 0;
+  line-height: 1;
+  &_primary {  }
+
+  &_outline {  }
+  
+  &_disabled {  }
+  
+  &_round {
+    border-radius: 100%;
+  }
+}

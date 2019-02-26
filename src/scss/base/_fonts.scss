@@ -1,0 +1,62 @@
+//[ROBOTO]
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+//[HARMONIA]
+@font-face {
+  font-family: 'Harmonia';
+  src: url(../fonts/harmonia-bold.eot);
+  src: url(../fonts/harmonia-bold.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/harmonia-bold.woff) format('woff'),
+       url(../fonts/harmonia-bold.ttf) format('truetype'),
+       url(../fonts/harmonia-bold.svg#Harmonia) format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Harmonia';
+  src: url(../fonts/harmonia-light.eot);
+  src: url(../fonts/harmonia-light.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/harmonia-light.woff) format('woff'),
+       url(../fonts/harmonia-light.ttf) format('truetype'),
+       url(../fonts/harmonia-light.svg#Harmonia) format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Harmonia';
+  src: url(../fonts/harmonia-regular.eot);
+  src: url(../fonts/harmonia-regular.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/harmonia-regular.woff) format('woff'),
+       url(../fonts/harmonia-regular.ttf) format('truetype'),
+       url(../fonts/harmonia-regular.svg#Harmonia) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Harmonia';
+  src: url(../fonts/harmonia-smbold.eot);
+  src: url(../fonts/harmonia-smbold.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/harmonia-smbold.woff) format('woff'),
+       url(../fonts/harmonia-smbold.ttf) format('truetype'),
+       url(../fonts/harmonia-smbold.svg#Harmonia) format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Harmonia';
+  src: url(../fonts/harmonia-black.eot);
+  src: url(../fonts/harmonia-black.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/harmonia-black.woff) format('woff'),
+       url(../fonts/harmonia-black.ttf) format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}

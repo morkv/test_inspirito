@@ -1,0 +1,22 @@
+$link-color-primary: #000;
+
+
+.link {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  user-select: none;
+  white-space: nowrap;
+  line-height: 1;
+  transition: border-color .3s, background .3s, color .3s, cursor .3s ease;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  color: $link-color-primary;
+  cursor: pointer;
+  
+  // to uppercase
+  &:not(.text_lowercase) {
+    text-transform: uppercase;
+  }
+}

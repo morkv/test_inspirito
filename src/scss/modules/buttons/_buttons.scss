@@ -1,0 +1,246 @@
+#locus {
+  position: relative;
+  transform-origin: 50% 50% 0px;
+  
+  &>svg {
+    width: 14px;
+    height: 14px;
+
+    rect {
+      transition: fill 1s, x .4s, y .4s ease;
+    }
+  }
+
+  &.btn_locus {
+    height: 45px;
+    width: 45px;
+    border: 1px solid rgba(41, 41, 41, .2);
+    transition: border 1s ease;
+
+    span {
+      position: absolute;
+      display: block;
+      transition: background 1s, width .4s, height .4s ease;
+      z-index: 10;
+      background-color: rgba(41, 41, 41, 1);
+
+      &.bottom {
+        bottom: -1px;
+        left: auto;
+        right: 0;
+        width: 0;
+      }
+
+      &.top {
+        top: -1px;
+        right: auto;
+        left: 0;
+        width: 0;
+      }
+
+      &.right {
+        top: -1px;
+        right: 0;
+        bottom: auto;
+        top: 0;
+        height: 0;
+      }
+
+      &.left {
+        left: -1px;
+        top: auto;
+        bottom: 0;
+        height: 0;
+      }
+
+      &.hor {
+        width: 0;
+        height: 1px;
+      }
+
+      &.vert {
+        width: 1px;
+        height: 0;
+      }
+    }
+
+    &:hover,
+    &.active,
+    &.onhover,
+    &:focus {
+      span {
+        &.bottom {
+          left: 0;
+          right: auto;
+          width: 100%;
+        }
+
+        &.top {
+          right: 0;
+          left: auto;
+          width: 100%;
+        }
+
+        &.right {
+          bottom: 0;
+          top: auto;
+          height: 100%;
+        }
+
+        &.left {
+          top: 0;
+          bottom: auto;
+          height: 100%;
+        }
+      }
+
+    }
+  }
+
+  &.active {
+    transform: rotateZ(45deg);
+    ///
+    margin-right: 10px;
+
+    ///
+    svg {
+      // transform: rotateZ(-45deg);
+    }
+  }
+
+  &__point {
+    &_1 {
+      x: 0;
+      y: 0;
+      width: 2px;
+      height: 2px;
+    }
+
+    &_2 {
+      x: 6;
+      y: 0;
+      width: 2px;
+      height: 2px;
+    }
+
+    &_3 {
+      x: 12;
+      y: 0;
+      width: 2px;
+      height: 2px;
+    }
+
+    &_4 {
+      x: 0;
+      y: 6;
+      width: 2px;
+      height: 2px;
+    }
+
+    &_5 {
+      x: 6;
+      y: 6;
+      width: 2px;
+      height: 2px;
+    }
+
+    &_6 {
+      x: 12;
+      y: 6;
+      width: 2px;
+      height: 2px;
+    }
+
+    &_7 {
+      x: 0;
+      y: 12;
+      width: 2px;
+      height: 2px;
+    }
+
+    &_8 {
+      x: 6;
+      y: 12;
+      width: 2px;
+      height: 2px;
+    }
+
+    &_9 {
+      x: 12;
+      y: 12;
+      width: 2px;
+      height: 2px;
+    }
+
+  }
+
+  &:hover,
+  &.active,
+  &.onhover {
+    #locus__point {
+      &_1 {
+        x: 6;
+        y: 2;
+        width: 2px;
+        height: 4px;
+      }
+
+      &_2 {
+        x: 6;
+        y: 0;
+        width: 2px;
+        height: 2px;
+      }
+
+      &_3 {
+        x: 8;
+        y: 6;
+        width: 4px;
+        height: 2px;
+      }
+
+      &_4 {
+        x: 0;
+        y: 6;
+        width: 2px;
+        height: 2px;
+      }
+
+      &_5 {
+        x: 6;
+        y: 6;
+        width: 2px;
+        height: 2px;
+      }
+
+      &_6 {
+        x: 12;
+        y: 6;
+        width: 2px;
+        height: 2px;
+      }
+
+      &_7 {
+        x: 2;
+        y: 6;
+        width: 4px;
+        height: 2px;
+      }
+
+      &_8 {
+        x: 6;
+        y: 12;
+        width: 2px;
+        height: 2px;
+      }
+
+      &_9 {
+        x: 6;
+        y: 8;
+        width: 2px;
+        height: 4px;
+      }
+
+    }
+  }
+}

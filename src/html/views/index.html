@@ -1,0 +1,100 @@
+<% var data = {
+  title: "Стартер | Проект"
+}; %>
+<!-- [INCLUDE HEAD] -->
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+  <body>
+    <div class="content" >
+      <!-- [INCLUDE HEADER] -->
+      <%= require('./../includes/header.html') %>
+    
+      <main>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mb-5">
+                <div class="row">
+                  <div class="col-12">
+                    <label class="label">Enter number 1-9 [Without validation]<br/>
+                      <input class="get-val" type="number" placeholder='Enter id'/>
+                    </label><br/>
+                    <input class="input-get" type="submit" value="Get id">
+                  </div>
+                  <div class="col-12">
+                    <div class="render-val"></div>
+                  </div>
+                </div>
+              </div>
+            <div class="col-md-6">
+              <form class="form form--validation">
+                <div class="form__item">
+                  <label class="form__label">Enter your username<br/>
+                    <input
+                      type="text"
+                      name="username"
+                      data-rule="required username"
+                      autocomplete="off"
+                      placeholder="username">
+                  </label>
+                </div>
+                <div class="form__item">
+                  <label class="form__label">Enter your Address 1<br/>
+                    <input type="text"
+                    name="address"
+                    data-rule="required address"
+                    autocomplete="off"
+                    placeholder="Address">
+                  </label>
+                </div>
+                <div class="form__item">
+                  <label class="form__label">Enter your Address 2<br/>
+                    <input
+                      type="text"
+                      name="addressSecond"
+                      data-rule="addressSecond"
+                      autocomplete="off"
+                      placeholder="Address 2">
+                  </label>
+                </div>
+                <div class="form__item">
+                  <label class="form__label">Enter your City<br/>
+                    <input
+                      type="text"
+                      name="city"
+                      data-rule="required city"
+                      autocomplete="off"
+                      placeholder="city">
+                  </label>
+                </div>
+                <div class="form__item">
+                  <label class="form__label">Enter your ZIP<br/>
+                    <input type="text"
+                      name="zip"
+                      data-rule="required zip"
+                      autocomplete="off"
+                      placeholder="zip">
+                  </label>
+                </div>
+                <div class="form__item">
+                  <label class="form__label">State<br/>
+                    <select id="select" name="state" data-rule="required state">
+                      <option value="">Choose an option</option>
+                      <option value="option1">Option1</option>
+                      <option value="option2">Option2</option>
+                    </select>
+                  </label>
+                </div>
+                <input class="input-reset" type="submit" value="Ok" data-rule="one">
+                <input class="input-submit" type="reset" value="Cancel" name="reset" data-rule="reset">
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- [INCLUDE FOOTER] -->
+      <%= require('./../includes/footer.html') %>
+    </div>
+    <script src="js/bundle.js"></script>
+  </body>
+</html>

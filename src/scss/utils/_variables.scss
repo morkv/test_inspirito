@@ -1,0 +1,34 @@
+//== Spacer
+$spacer:   10px;
+$spacer-x: $spacer;
+$spacer-y: $spacer;
+$spacers: (
+  0: (
+    x: 0,
+    y: 0
+  ),
+  'half': (
+    x: $spacer-x/2,
+    y: $spacer-y/2
+  ),
+  1: (
+    x: $spacer-x,
+    y: $spacer-y
+  ),
+  'onehalf': (
+    x: ($spacer-x * 1.5),
+    y: ($spacer-y * 1.5)
+  ),
+  2: (
+    x: ($spacer-x * 2),
+    y: ($spacer-y * 2)
+  ),
+  3: (
+    x: ($spacer-x * 3),
+    y: ($spacer-y * 3)
+  ),
+  4: (
+    x: ($spacer-x * 4),
+    y: ($spacer-y * 4)
+  )
+);

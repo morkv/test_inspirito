@@ -1,0 +1,18 @@
+<% var data = {
+  title: "Secondary | project"
+}; %>
+<!-- [INCLUDE HEAD] -->
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+  <body>
+    <div class="content">
+      <!-- [INCLUDE HEADER] -->
+      <%= require('./../includes/header.html') %>
+      
+      <!-- [INCLUDE FOOTER] -->
+      <%= require('./../includes/footer.html') %>
+    </div>
+    <!-- [SCRIPTS] -->
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
